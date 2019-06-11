@@ -10,7 +10,5 @@ RUN npm install
 # Bundle app source
 COPY . /git/academy-api/
 RUN npm run prepublish
-
-CMD [ "npm", "run", "runServer" ]
-
 EXPOSE 5000
+CMD [ "npm", "run", "runServer" ]

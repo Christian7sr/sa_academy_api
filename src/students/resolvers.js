@@ -11,7 +11,7 @@ const resolvers = {
 			generalRequest(`${URL}/${code}`, 'GET'),
 	},
 	Mutation: {
-		createStudent: (_, { course }) =>
+		createStudent: (_, { student }) =>
 			generalRequest(`${URL}`, 'POST', student),
 		updateStudent: (_, { code, student }) =>
 			generalRequest(`${URL}/${code}`, 'PUT', student),
